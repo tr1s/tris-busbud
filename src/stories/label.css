@@ -1,0 +1,27 @@
+/* Label styles
+========================================================================== */
+
+.label {
+  display: flex;
+  width: 100%;
+  color: var(--color-secondary-opaque);
+}
+.label p {
+  font-size: var(--font-label-md);
+}
+.label .label-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.label .type {
+  margin-right: var(--space-8);
+}
+.label .passengers {
+  margin-left: var(--space-8);
+}
+.label .type img,
+.label .time img,
+.label .passengers img {
+  margin-right: var(--space-8);
+}

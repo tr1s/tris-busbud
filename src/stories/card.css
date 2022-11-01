@@ -1,0 +1,163 @@
+/* Outer card "topPanel" variant styles
+========================================================================== */
+
+.outer-card {
+  width: 100%;
+  max-width: 360px;
+}
+
+.outer-card.top {
+  border: 1px solid var(--color-secondary-translucent);
+  border: 1px solid #a6f7c2;
+  background: #cffcdd;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+.outer-card .outer-card-top-content {
+  font-size: var(--font-label-sm);
+  font-weight: var(--font-weight-bold);
+  padding: var(--space-8) 0;
+  display: flex;
+  justify-content: center;
+}
+.outer-card .outer-card-top-content img {
+  margin-right: var(--space-2);
+  -webkit-mask-image: #cffcdd;
+  mask-image: #cffcdd;
+}
+
+/* Outer card "bottomPanel" variant styles
+========================================================================== */
+
+.outer-card.bottom {
+  border: 1px solid var(--color-border-informative);
+  background: var(--color-global-blue-regular-50);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+.outer-card .outer-card-bottom-content {
+  padding-left: var(--space-20);
+}
+.outer-card .outer-card-bottom-content .item:first-child {
+  border-bottom: 1px solid var(--color-border-informative-transparent);
+}
+.outer-card .outer-card-bottom-content .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-8);
+  color: var(--color-primary-opaque);
+  font-weight: var(--font-weight-bold);
+}
+.outer-card .outer-card-bottom-content .item.with-icons p {
+  display: flex;
+  align-items: center;
+}
+.outer-card .outer-card-bottom-content .item.with-icons p span {
+  margin-left: var(--space-8);
+}
+.outer-card .bottom {
+  font-size: var(--font-label-sm);
+  font-weight: var(--font-weight-bold);
+  padding: var(--space-8) 0;
+}
+
+/* Inner card styles
+========================================================================== */
+
+.card {
+  border: 1px solid var(--color-primary-translucent);
+  border-radius: var(--border-radius);
+  background: var(--color-white-true);
+  min-height: 202px;
+  padding: var(--space-16) var(--space-20);
+  padding-bottom: var(--space-8);
+  box-shadow: 0px 2px 4px 0px #20415a1a, 0px 1px 1px 0px #20415a1a;
+}
+.card.bottom-panel {
+  padding: var(--space-16) var(--space-20);
+}
+
+/* Card header styles */
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.card-header img {
+  width: 100%;
+  max-width: 100px;
+  margin: left;
+}
+.card-header .header-icons-right {
+  display: flex;
+}
+.card-header .header-icons-right img {
+  width: 20px;
+  margin: 0 5px;
+}
+
+/* Card body styles */
+
+.card-destination {
+  display: flex;
+  justify-content: flex-start;
+  padding: var(--space-20) 0;
+}
+.card-destination .travel {
+  padding-right: var(--space-16);
+}
+.card-destination .arrow {
+  align-self: flex-start;
+  padding-top: 7px;
+  padding-right: 10%;
+}
+.card-destination .time {
+  color: var(--color-primary-opaque);
+  font-size: var(--font-label-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: -2px;
+}
+.card-destination .time.summary {
+  font-weight: var(--font-weight-regular);
+}
+.card-destination .date {
+  color: var(--color-tertiary-opaque);
+  font-size: var(--font-label-md);
+  margin-bottom: 6px;
+}
+.card-destination .station {
+  font-size: var(--font-label-lg);
+  color: var(--color-secondary-opaque);
+  margin-bottom: 1px;
+}
+.card-destination .station.summary {
+  font-size: var(--font-label-md);
+  font-weight: var(--font-weight-bold);
+}
+.card-destination .city {
+  font-size: var(--font-label-xs);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-tertiary-opaque);
+  text-transform: uppercase;
+  margin-bottom: -2px;
+}
+.card-destination .map {
+  font-size: var(--font-label-md);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-link-opaque);
+}
+
+/* Card footer styles */
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.multiple-options {
+  color: var(--color-tertiary-opaque);
+  font-size: var(--font-label-md);
+  font-weight: var(--font-weight-bold);
+  flex-shrink: 0;
+}

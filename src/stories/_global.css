@@ -1,0 +1,194 @@
+/* Reset
+========================================================================== */
+/*
+    1. Use a more-intuitive box-sizing model.
+  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*.
+    2. Remove default margins
+  */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering and legibility
+  */
+body {
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Typography
+========================================================================== */
+
+@font-face {
+  font-family: "Codec Pro";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("/src/stories/assets/fonts/codec-pro-web/codec-pro-bold.woff2")
+    format("woff2");
+  unicode-range: U+000-5FF;
+}
+@font-face {
+  font-family: "Codec Pro";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("/src/stories/assets/fonts/codec-pro-web/codec-pro-regular.woff2")
+    format("woff2");
+  unicode-range: U+000-5FF;
+}
+
+:root {
+  --font-fallback-sans-serif: -apple-system, BlinkMacSystemFont, avenir next,
+    avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial,
+    sans-serif;
+
+  --font-primary: "Codec Pro", var(--font-fallback-sans-serif);
+
+  --line-height: 1;
+  --line-height-label: 1.125;
+  --line-height-heading: 1.25;
+  --line-height-body: 1.375;
+  --line-height-lead: 1.5;
+
+  --font-base: 1.6rem;
+
+  --font-label-xs: 1rem;
+  --font-label-sm: 1.2rem;
+  --font-label-md: 1.4rem;
+  --font-label-lg: 1.6rem;
+  --font-label-xl: 1.8rem;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+/* Design Tokens
+========================================================================== */
+
+:root {
+  --color-white-true: #fff;
+  --color-accent-secondary-500: #0271ca;
+  --color-global-blue-regular-50: #e6f6ff;
+
+  --color-border-informative: #a3e7ff;
+  --color-border-informative-transparent: #30b0ff20;
+
+  --color-primary-opaque: #20415a;
+  --color-secondary-opaque: #436783;
+  --color-tertiary-opaque: #698ca5;
+  --color-link-opaque: var(--color-accent-secondary-500);
+  --color-background-secondary-transparent: #8facc110;
+  --color-primary-translucent: rgba(255, 255, 255, 0.85);
+  --color-secondary-translucent: rgba(211, 222, 229, 0.85);
+
+  --border-radius: 24px;
+  --transition: 0.4s all ease;
+  --border: #e1e1e1;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+
+  --space-2: 4px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-28: 28px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+}
+
+/* Global Styles
+========================================================================== */
+
+html {
+  font-size: 62.5%; /* 1rem = 10px, 3.5rem = 35px; */
+}
+
+body {
+  color: #3a3843;
+  font-size: var(--font-base);
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-body);
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  margin: 0;
+}
+
+p,
+input,
+a,
+textarea,
+::placeholder {
+  margin: 0;
+  font-size: var(--font-base);
+}
+
+a {
+  display: inline;
+  text-decoration: none;
+  font-size: inherit;
+}
+a:hover,
+a:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
