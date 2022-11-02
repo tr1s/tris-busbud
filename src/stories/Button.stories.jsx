@@ -27,3 +27,9 @@ TopPanel.args = {
   variant: "topPanel",
   text: "$45",
 };
+
+export const BottomPanel = Template.bind({});
+BottomPanel.args = {
+  variant: "bottomPanel",
+  text: "$95",
+};

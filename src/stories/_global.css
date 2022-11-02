@@ -119,9 +119,10 @@ h6 {
   --color-white-true: #fff;
   --color-accent-secondary-500: #0271ca;
   --color-global-blue-regular-50: #e6f6ff;
-
+  --color-global-blue-muted-700: #20415a;
   --color-border-informative: #a3e7ff;
   --color-border-informative-transparent: #30b0ff20;
+  --color-background-informative-transparent: rgba(48, 176, 255, 0.1);
 
   --color-primary-opaque: #20415a;
   --color-secondary-opaque: #436783;

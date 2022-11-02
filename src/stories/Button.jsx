@@ -1,8 +1,9 @@
 import React from "react";
+
 import buttonArrow from "./assets/icons/button-arrow.svg";
 import buttonArrowLightBlue from "./assets/icons/button-arrow-light-blue.svg";
 import buttonArrowBlue from "./assets/icons/button-arrow-blue.svg";
-// import PropTypes from 'prop-types';
+
 import "./button.css";
 
 export const Button = ({ text, variant }) => {

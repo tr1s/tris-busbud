@@ -1,10 +1,13 @@
-/* Outer card "topPanel" variant styles
+/* Outer card styles for "topPanel" and "bottomPanel" variants
 ========================================================================== */
 
 .outer-card {
   width: 100%;
   max-width: 360px;
 }
+
+/* Outer card "topPanel" variant styles
+========================================================================== */
 
 .outer-card.top {
   border: 1px solid var(--color-secondary-translucent);
@@ -78,16 +81,15 @@
   padding: var(--space-16) var(--space-20);
 }
 
-/* Card header styles */
+/* Inner card header styles */
 
 .card-header {
   display: flex;
   justify-content: space-between;
 }
-.card-header img {
+.card-header .logo {
   width: 100%;
   max-width: 100px;
-  margin: left;
 }
 .card-header .header-icons-right {
   display: flex;
@@ -97,7 +99,7 @@
   margin: 0 5px;
 }
 
-/* Card body styles */
+/* Inner card body styles */
 
 .card-destination {
   display: flex;
@@ -148,7 +150,7 @@
   color: var(--color-link-opaque);
 }
 
-/* Card footer styles */
+/* Inner card footer styles */
 
 .card-footer {
   display: flex;

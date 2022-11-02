@@ -25,6 +25,6 @@
   left: var(--space-12);
 }
 .button.bottom-panel {
-  color: #20415a;
-  background: rgba(48, 176, 255, 0.1);
+  color: var(--color-global-blue-muted-700);
+  background: var(--color-background-informative-transparent);
 }
