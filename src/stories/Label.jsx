@@ -5,7 +5,12 @@ import bus from "./assets/icons/bus.svg";
 import time from "./assets/icons/time.svg";
 import passengers from "./assets/icons/people2.svg";
 
-export const Label = ({ variant, travelType, duration }) => {
+export const Label = ({
+  variant,
+  travelType,
+  duration,
+  numberOfPassengers,
+}) => {
   return (
     <div className="label">
       <div className="label-item type">
@@ -19,7 +24,7 @@ export const Label = ({ variant, travelType, duration }) => {
       {variant === "summary" && (
         <div className="label-item passengers">
           <img src={passengers} alt="" />
-          <p>2</p>
+          <p>{numberOfPassengers}</p>
         </div>
       )}
     </div>

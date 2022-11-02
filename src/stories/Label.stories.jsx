@@ -22,4 +22,5 @@ WithPassangers.args = {
   variant: "summary",
   travelType: "Bus",
   duration: "10h 6m",
+  numberOfPassengers: 4,
 };

@@ -74,7 +74,12 @@ export const Card = ({ variant }) => {
           </div>
         </div>
         <div className="card-footer">
-          <Label variant={variant} travelType="Bus" duration="4h 30m" />
+          <Label
+            variant={variant}
+            travelType="Bus"
+            duration="4h 30m"
+            numberOfPassengers={2}
+          />
 
           {/* Depending on which variant is selected, show the correct action button. */}
           {variant === "sellable" && <Button variant={variant} text="$45" />}
