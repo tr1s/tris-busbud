@@ -1,10 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 import "./_global.css";
 import "./card.css";
 
-import { Button } from "./Button";
 import { Label } from "./Label";
+import { Button } from "./Button";
+import { Logo } from "./Logo";
+
 import logo from "./assets/logo.svg";
 import wifi from "./assets/icons/wifi.svg";
 import people from "./assets/icons/people.svg";
@@ -12,17 +15,15 @@ import qr from "./assets/icons/qr.svg";
 import hand from "./assets/icons/hand.svg";
 import seat from "./assets/icons/seat.svg";
 import fork from "./assets/icons/fork.svg";
-
 import veryLongArray from "./assets/icons/verylongarrow.svg";
 import lightning from "./assets/icons/lightning.svg";
 
-export const Card = ({ variant, ...props }) => {
+export const Card = ({ variant }) => {
   return (
     <article
       className={`outer-card ${variant === "topPanel" && "top"} ${
         variant === "bottomPanel" && "bottom"
       }`}
-      {...props}
     >
       {variant === "topPanel" && (
         <p className="outer-card-top-content">
@@ -36,7 +37,7 @@ export const Card = ({ variant, ...props }) => {
         }`}
       >
         <div className="card-header">
-          <img src={logo} className="logo" alt="" />
+          <Logo logoImport={logo} alt="Greyhound logo." />
           <div className="header-icons-right">
             <img src={wifi} alt="" />
             <img src={people} alt="" />
