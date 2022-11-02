@@ -1,3 +1,15 @@
+# tris-busbud
+
+The app is empty, all components and card variants can be tested in storybook!
+
+- install dependencies `npm i`
+- run app `npm start`
+- run storybook `npm run storybook`
+
+🚀
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
